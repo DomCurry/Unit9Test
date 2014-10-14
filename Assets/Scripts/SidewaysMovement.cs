@@ -5,7 +5,11 @@ public class SidewaysMovement : MonoBehaviour {
 	[SerializeField]
 	private float speed;
 	// Update is called once per frame
-	void FixedUpdate () {
+	void Start () {
 		rigidbody.velocity = Vector3.right * speed;
+
+	}
+	public void PlayerDeath(){
+		rigidbody.velocity = Vector3.zero;
 	}
 }

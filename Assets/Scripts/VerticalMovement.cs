@@ -13,4 +13,7 @@ public class VerticalMovement: MonoBehaviour {
 			rigidbody.AddForce(Vector3.up * force);
 		}
 	}
+	public void PlayerDeath(){
+		movementAllowed = false;
+	}
 }

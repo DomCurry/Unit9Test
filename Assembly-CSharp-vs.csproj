@@ -46,11 +46,16 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BoundaryGenerator.cs" />
      <Compile Include="Assets\Scripts\ButtonHandler.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\DestroyOnTouch.cs" />
      <Compile Include="Assets\Scripts\Gravity.cs" />
      <Compile Include="Assets\Scripts\MenuButton.cs" />
+     <Compile Include="Assets\Scripts\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\SidewaysMovement.cs" />
+     <Compile Include="Assets\Scripts\TimeDestroy.cs" />
+     <Compile Include="Assets\Scripts\TurretFire.cs" />
      <Compile Include="Assets\Scripts\VerticalMovement.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
