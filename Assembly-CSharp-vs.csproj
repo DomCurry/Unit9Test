@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\Gravity.cs" />
      <Compile Include="Assets\Scripts\MenuButton.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
+     <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\SidewaysMovement.cs" />
      <Compile Include="Assets\Scripts\TimeDestroy.cs" />
      <Compile Include="Assets\Scripts\TurretFire.cs" />
