@@ -24,8 +24,8 @@ public class PlayerScript : MonoBehaviour {
 	[SerializeField]
 	private float textSpeed;
 
-	private bool isDead = false;
-	private Vector3 pos = Vector3.zero;
+	public bool isDead = false;
+
 	void Start(){
 		vertScript = gameObject.GetComponent<VerticalMovement>();
 		sideScript = gameObject.GetComponent<SidewaysMovement>();
@@ -46,6 +46,7 @@ public class PlayerScript : MonoBehaviour {
 		vertScript.PlayerDeath();
 		sideScript.PlayerDeath();
 		isDead = true;
+
 	}
 	void DeathMessage(string otherTag){
 		deadText.transform.parent = deathTextHandler.transform;

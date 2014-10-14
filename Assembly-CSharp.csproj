@@ -51,7 +51,9 @@
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\DestroyOnTouch.cs" />
      <Compile Include="Assets\Scripts\Gravity.cs" />
+     <Compile Include="Assets\Scripts\HighScore.cs" />
      <Compile Include="Assets\Scripts\MenuButton.cs" />
+     <Compile Include="Assets\Scripts\PlayerFire.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\SidewaysMovement.cs" />

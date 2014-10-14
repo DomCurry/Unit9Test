@@ -14,6 +14,9 @@ public class BoundaryGenerator : MonoBehaviour {
 	[SerializeField]
 	private Transform turret;
 
+	[SerializeField]
+	private PlayerFire aimScript;
+
 	void OnTriggerExit(Collider other){ //determine when and which prefab to spawn
 		if(other.gameObject.tag == "Base"){
 			if(other.gameObject.transform.parent.gameObject.tag == "CeilingSegment"){
@@ -35,6 +38,7 @@ public class BoundaryGenerator : MonoBehaviour {
 		Instantiate(floor, pos, Quaternion.identity);
 	}
 	void SpawnTurret(Vector3 pos){
-		Instantiate(turret,pos,Quaternion.identity);
+		Transform target = Instantiate(turret,pos,Quaternion.identity) as Transform;
+		aimScript.AddTarget(target.FindChild("Turret").transform.position);
 	}
 }
