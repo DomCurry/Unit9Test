@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//(C) copyright Dominic Curry 15/10/2014
+using UnityEngine;
 using System.Collections;
 
 public class PlayerScript : MonoBehaviour {
@@ -34,7 +35,7 @@ public class PlayerScript : MonoBehaviour {
 		if(isDead){
 			deathTextHandler.transform.localPosition = new Vector3(Mathf.Lerp(deathTextHandler.transform.localPosition.x, -7f,textSpeed),0f,0f);
 			if(Input.GetKeyDown(KeyCode.Return)){
-				Application.LoadLevel(0);
+				Application.LoadLevel(1);
 			}
 		}
 	}

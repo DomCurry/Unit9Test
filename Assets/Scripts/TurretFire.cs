@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//(C) copyright Dominic Curry 15/10/2014
+using UnityEngine;
 using System.Collections;
 
 public class TurretFire : MonoBehaviour {
