@@ -21,10 +21,8 @@ public class PlayerFire : MonoBehaviour {
 	private LineRenderer laser;
 	[SerializeField] 
 	private Vector3 gunOffset;
-	// Use this for initialization
-	void Start () {
-	
-	}
+
+
 	
 	// Update is called once per frame
 	void Update () {
