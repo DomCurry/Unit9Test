@@ -37,10 +37,10 @@ Spend a decent amount of time making things look good
  - link background parrallax to camera movement not player movement
 the game to me feels 'slow' 
  - perhaps a slow increase of speed as the level progresses
-rebindable keys
-a way to get back to the menu
-a pause screen
-more types of enemies?
-tutorial
-designed levels
-a story
+rebindable keys 
+a way to get back to the menu 
+a pause screen 
+more types of enemies? 
+tutorial 
+designed levels 
+a story 
