@@ -16,9 +16,11 @@ public class BoundaryGenerator : MonoBehaviour {
 
 	[SerializeField]
 	private PlayerFire aimScript;
-
+	private int turretCooldown;
 	void OnTriggerExit(Collider other){ //determine when and which prefab to spawn
 		if(other.gameObject.tag == "Base"){
+			turretCooldown--;
+			Debug.Log (other.gameObject.name);
 			if(other.gameObject.transform.parent.gameObject.tag == "CeilingSegment"){
 				SpawnCeiling(transform.position + ceilingOffset);
 			}
@@ -26,7 +28,7 @@ public class BoundaryGenerator : MonoBehaviour {
 				SpawnFloor(transform.position + floorOffset);
 			}
 
-			if(Random.Range(0,10) == 0){
+			if(Random.Range(0,10) == 0 && turretCooldown < 0){
 				SpawnTurret (transform.position + new Vector3(0,Random.Range(-3,3),0));
 			}
 		}
@@ -38,6 +40,7 @@ public class BoundaryGenerator : MonoBehaviour {
 		Instantiate(floor, pos, Quaternion.identity);
 	}
 	void SpawnTurret(Vector3 pos){
+		turretCooldown += 4;
 		Transform target = Instantiate(turret,pos,Quaternion.identity) as Transform;
 		aimScript.AddTarget(target.FindChild("Turret").transform.position);
 	}
