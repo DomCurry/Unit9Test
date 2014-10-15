@@ -19,9 +19,9 @@ press spacebar to gain height
 
 try to avoid touching things - any object will kill you!
 you can shoot at the turrets
-    you need to be able to see the blue part
-    a laser will appear and start to charge
-    once it is charged you will fire a bullet and the turret will die!
+ - you need to be able to see the blue part
+ - a laser will appear and start to charge
+ - once it is charged you will fire a bullet and the turret will die!
   
 the objective is to gain height - that's your score
 the level repsonds to your position
@@ -31,12 +31,12 @@ in order to be allowed higher you have to be higher
 Things I would do if I had more time
 ====================================
 Spend a decent amount of time making things look good
-    more intricate models
-    better textures
-    cripser particles
-    link background parrallax to camera movement not player movement
+ - more intricate models
+ - better textures
+ - cripser particles
+ - link background parrallax to camera movement not player movement
 the game to me feels 'slow' 
-    perhaps a slow increase of speed as the level progresses
+ - perhaps a slow increase of speed as the level progresses
 rebindable keys
 a way to get back to the menu
 a pause screen
