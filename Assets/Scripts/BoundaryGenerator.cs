@@ -20,7 +20,6 @@ public class BoundaryGenerator : MonoBehaviour {
 	void OnTriggerExit(Collider other){ //determine when and which prefab to spawn
 		if(other.gameObject.tag == "Base"){
 			turretCooldown--;
-			Debug.Log (other.gameObject.name);
 			if(other.gameObject.transform.parent.gameObject.tag == "CeilingSegment"){
 				SpawnCeiling(transform.position + ceilingOffset);
 			}
