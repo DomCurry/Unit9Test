@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Gravity : MonoBehaviour {
 	[SerializeField]
-	private float gravity = 2f;
+	private float gravity = 20f;
 	bool isOn = true;
 	void FixedUpdate () {
 		if(isOn){
